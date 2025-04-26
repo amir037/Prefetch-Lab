@@ -37,6 +37,7 @@ The analysis is performed in a Windows VM hosted on Vultr.
 ```
 C:\Cases\Prefetch\
 ```
+![fTdWGYVuKc](https://github.com/user-attachments/assets/4002f842-9feb-4ce4-8e21-fad6bc5f0365)
 
 ---
 
