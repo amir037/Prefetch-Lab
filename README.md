@@ -78,6 +78,34 @@ This command generates:
 
 - Although not all of the executables above are suspicious, a deeper investigation might reveal how our threat actor used them.
 
+## 🤿 Deep-Diving into Interesting Prefetch Files
+
+- We will then dig deeper using `PECmd`.
+  ```powershell
+  C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -k burpsuite -f C:\Cases\Prefetch\7ZG.EXE-D9AA3A0B.pf
+  ```
+  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/37ab50a1-b1d3-4bd4-9b77-f1e0a0da937f">
+  <br><br>
+  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/8301994a-f21d-4100-8142-9b0468b172e4">
+
+- Examine BURPSUITE-PRO-CRACKED.EXE-EF7051A8.pf
+```powershell
+C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -f C:\Cases\Prefetch\BURPSUITE-PRO-CRACKED.EXE-EF7051A8.pf
+```
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/a1ac07ac-6b2c-4842-8943-87365942ce0a">
+
+- Examine B.EXE-B3590BF0.pf
+```powershell
+C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -f C:\Cases\Prefetch\B.EXE-B3590BF0.pf
+```
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/e5f1e89b-9952-457f-a94b-d2689fc54ff6">
+<br><br>
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/5f1926e9-fa96-4e2c-be89-22990152b2d5">
+
+- Examine C.EXE-C6AEC675.pf
+```powershell
+C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -f C:\Cases\Prefetch\C.EXE-C6AEC675.pf
+```
 ---
 
 ## 📌 Key Findings
