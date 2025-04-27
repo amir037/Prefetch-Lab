@@ -88,13 +88,13 @@ This command generates:
   <br><br>
   <img width="1000" alt="image" src="https://github.com/user-attachments/assets/8301994a-f21d-4100-8142-9b0468b172e4">
 
-- Examine BURPSUITE-PRO-CRACKED.EXE-EF7051A8.pf
+- Examine `BURPSUITE-PRO-CRACKED.EXE-EF7051A8.pf`
 ```powershell
 C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -f C:\Cases\Prefetch\BURPSUITE-PRO-CRACKED.EXE-EF7051A8.pf
 ```
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/a1ac07ac-6b2c-4842-8943-87365942ce0a">
 
-- Examine B.EXE-B3590BF0.pf
+- Examine `B.EXE-B3590BF0.pf`
 ```powershell
 C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -f C:\Cases\Prefetch\B.EXE-B3590BF0.pf
 ```
@@ -102,10 +102,42 @@ C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -f C:\Cases\Prefetch\B.EXE-B3590BF0.
 <br><br>
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/5f1926e9-fa96-4e2c-be89-22990152b2d5">
 
-- Examine C.EXE-C6AEC675.pf
+- Examine `C.EXE-C6AEC675.pf`
 ```powershell
 C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -f C:\Cases\Prefetch\C.EXE-C6AEC675.pf
 ```
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/aa45ddd9-bf8e-47c2-b592-598264c9f2b3">
+
+- Examine `P.EXE-C2093F36.pf`
+```powershell
+C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -f C:\Cases\Prefetch\P.EXE-C2093F36.pf
+```
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/5026c5e8-27fd-4b55-9e6b-235a88cf76c7">
+
+- Examine `POWERSHELL.EXE-022A1004.pf`
+```powershell
+C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -f C:\Cases\Prefetch\POWERSHELL.EXE-022A1004.pf
+```
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/36f3c111-3850-456a-98ea-943c60c38264">
+
+- Examine `RCLONE.EXE-56772E5D.pf`
+-- Let’s be sure to include keywords for newly learned interesting items
+  ```powershell
+  C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -k backup,xls,pdf,zip -f C:\Cases\Prefetch\RCLONE.EXE-56772E5D.pf
+  ```
+  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/f4f64366-8024-4955-b62c-c9cf1a5a3d16">
+  <br><br>
+  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/6b2b8f99-9f9d-4023-84c5-bfed47edc46f">
+  
+- Let's see what program referenced `lsass.dmp`
+  
+  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/679d1b44-71cc-431c-b452-7197e04d1159">
+- Examine `SD.EXE-A541D1D9.pf`
+```powershell
+C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -k backup -f C:\Cases\Prefetch\SD.EXE-A541D1D9.pf
+```
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/f9214bdb-5125-420a-b323-560e6e32aed4">
+
 ---
 
 ## 📌 Key Findings
