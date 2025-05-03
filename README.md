@@ -140,25 +140,19 @@ C:\DFIR_Tools\ZimmermanTools\net6\PECmd.exe -k backup -f C:\Cases\Prefetch\SD.EX
 
 ---
 
-## 📌 Key Findings
+## 📌 Timeline
 
-*Include your summarized findings here.*
+| Timestamp                | Event                                                                                                                                                 |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **2024-02-12 19:19:48**  | Execution of `RCLONE.EXE` – data‑migration utility accessed multiple sensitive business documents                                                     |
+| **2024-03-12 18:36:11**  | Download and execution of `BURPSUITE‑PRO‑CRACKED.EXE` – initial malware delivery via cracked Burp Suite                                               |
+| **2024-03-12 18:55:00**  | Execution of `7ZG.EXE` – archive extraction, likely unpacking the Burp Suite payload                                                                  |
+| **2024-03-12 19:02:37**  | Execution of `C.EXE` – suspicious temporary executable in `C:\Windows\Temp`                                                                           |
+| **2024-03-12 19:26:00**  | Execution of `POWERSHELL.EXE` – high‑volume access of company files (e.g., backups, exports), indicating potential exfiltration                       |
+| **2024-03-12 (various)** | Analysis of `B.EXE`, `C.EXE` and `RCLONE.EXE` – these TEMP‑directory executables manipulated files in `C:\Windows\Temp` and backup logs               |
 
-- Identified suspicious executables
-- Frequency of suspicious executable runs
-- Evidence supporting potential malware execution
-
----
-
-
-## 🧠 Learning Outcomes
-
-Through this project, I gained practical experience in:
-
-- Identifying and interpreting critical forensic artifacts
-- Using specialized forensic tools
-- Conducting detailed timeline analysis for DFIR investigations
 
 ---
+
 
 
